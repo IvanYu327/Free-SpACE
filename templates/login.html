@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+
+  <section class="searchSection">
+    <form action="#" method="post">
+      <div id="enterAddress">Log In</div>
+      <input
+        id="username-input"
+        type="text"
+        placeholder="Username"
+        name="username-field"
+      />
+      <br />
+      <input
+        id="password-input"
+        type="text"
+        placeholder="Password"
+        name="pw-field"
+      />
+
+      <div class="button">
+        <input type="submit" value="Log In" />
+      </div>
+    </form>
+  </section>
+
+  <body>
+    <h1>{{login_fail}}</h1>
+    <h1>No Account?</h1>
+    <a href="{{url_for('register')}}">Sign Up</a><br />
+  </body>
+</html>
