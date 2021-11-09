@@ -9,7 +9,14 @@
 
   <section class="searchSection">
     <form action="#" method="post">
-      <div id="enterAddress">Sign Up</div>
+      <div id="enterSignUp">Sign Up</div>
+      <input
+        id="email-input"
+        type="text"
+        placeholder="Email"
+        name="email-field"
+      />
+      <br />
       <input
         id="username-input"
         type="text"
@@ -31,7 +38,9 @@
   </section>
 
   <body>
+    <h1>{{signup_fail}}</h1>
     <h1>Login</h1>
     <a href="{{url_for('login')}}">Login Page</a><br />
+    <a href="{{url_for('home')}}">Home</a><br />
   </body>
 </html>
