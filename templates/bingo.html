@@ -4,13 +4,235 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/bingostyle.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Profile</h1>
-    <h1>{{user}}</h1>
-    <h1>{{email}}</h1>
-    <h1>{{points}}</h1>
-    <a href="{{url_for('home')}}">Home</a><br />
+    <div class="frame">
+      <div class="center">
+        <div class="profile">
+          <div class="image">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <img
+              src="https://cdn.discordapp.com/emojis/771556839917355038.png"
+              width="70"
+              height="70"
+            />
+          </div>
+
+          <div class="name">{{user}}</div>
+          <div class="job">{{email}}</div>
+
+          <div class="actions">
+            <button class="btn">Home</button>
+            <button class="btn">Log Out</button>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="box">
+            <span class="value">[ 999,999 ]</span>
+            <span class="parameter">Liquid+ points</span>
+          </div>
+          <div class="box">
+            <span class="value">[ {{bingos}} ]</span>
+            <span class="parameter">Bingo Wins</span>
+          </div>
+          <div class="box">
+            <span class="value">[ 0 Days ]</span>
+            <span class="parameter">until next Event</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="app">
+      <form action="#" method="post">
+        <h1>It's time to <span class="blue-color">Bingo!</span></h1>
+        <h3 class="gray-color">
+          Pay attention to [Event descript]! Play Bingo to win points idk
+          joasidfjiasdfa!
+        </h3>
+        <article class="feature1">
+          <input type="checkbox" id="feature1" name="bingo-field-1" />
+          <div>
+            <span> {{b1}} </span>
+          </div>
+        </article>
+
+        <article class="feature2">
+          <input type="checkbox" id="feature2" name="bingo-field-2" />
+          <div>
+            <span> {{b2}} </span>
+          </div>
+        </article>
+
+        <article class="feature3">
+          <input type="checkbox" id="feature3" name="bingo-field-3" />
+          <div>
+            <span> {{b3}} </span>
+          </div>
+        </article>
+
+        <article class="feature4">
+          <input type="checkbox" id="feature4" name="bingo-field-4" />
+          <div>
+            <span> {{b4}} </span>
+          </div>
+        </article>
+
+        <article class="feature5">
+          <input type="checkbox" id="feature5" name="bingo-field-5" />
+          <div>
+            <span> {{b5}} </span>
+          </div>
+        </article>
+
+        <article class="feature6">
+          <input type="checkbox" id="feature6" name="bingo-field-6" />
+          <div>
+            <span> {{b6}} </span>
+          </div>
+        </article>
+
+        <article class="feature7">
+          <input type="checkbox" id="feature7" name="bingo-field-7" />
+          <div>
+            <span> {{b7}} </span>
+          </div>
+        </article>
+
+        <article class="feature8">
+          <input type="checkbox" id="feature8" name="bingo-field-8" />
+          <div>
+            <span> {{b8}} </span>
+          </div>
+        </article>
+
+        <article class="feature9">
+          <input type="checkbox" id="feature9" name="bingo-field-9" />
+          <div>
+            <span> {{b9}} </span>
+          </div>
+        </article>
+
+        <article class="feature10">
+          <input type="checkbox" id="feature10" name="bingo-field-10" />
+          <div>
+            <span> {{b10}} </span>
+          </div>
+        </article>
+
+        <article class="feature11">
+          <input type="checkbox" id="feature11" name="bingo-field-11" />
+          <div>
+            <span> {{b11}} </span>
+          </div>
+        </article>
+
+        <article class="feature12">
+          <input type="checkbox" id="feature12" name="bingo-field-12" />
+          <div>
+            <span> {{b12}} </span>
+          </div>
+        </article>
+
+        <article class="feature13">
+          <input type="checkbox" id="feature13" name="bingo-field-13" />
+          <div>
+            <span> {{b13}} </span>
+          </div>
+        </article>
+
+        <article class="feature14">
+          <input type="checkbox" id="feature14" name="bingo-field-14" />
+          <div>
+            <span> {{b14}} </span>
+          </div>
+        </article>
+
+        <article class="feature15">
+          <input type="checkbox" id="feature15" name="bingo-field-15" />
+          <div>
+            <span> {{b15}} </span>
+          </div>
+        </article>
+
+        <article class="feature16">
+          <input type="checkbox" id="feature16" name="bingo-field-16" />
+          <div>
+            <span> {{b16}} </span>
+          </div>
+        </article>
+
+        <article class="feature17">
+          <input type="checkbox" id="feature17" name="bingo-field-17" />
+          <div>
+            <span> {{b17}} </span>
+          </div>
+        </article>
+
+        <article class="feature18">
+          <input type="checkbox" id="feature18" name="bingo-field-18" />
+          <div>
+            <span> {{b18}} </span>
+          </div>
+        </article>
+
+        <article class="feature19">
+          <input type="checkbox" id="feature19" name="bingo-field-19" />
+          <div>
+            <span> {{b19}} </span>
+          </div>
+        </article>
+
+        <article class="feature20">
+          <input type="checkbox" id="feature20" name="bingo-field-20" />
+          <div>
+            <span> {{b20}} </span>
+          </div>
+        </article>
+
+        <article class="feature21">
+          <input type="checkbox" id="feature21" name="bingo-field-21" />
+          <div>
+            <span> {{b21}} </span>
+          </div>
+        </article>
+
+        <article class="feature22">
+          <input type="checkbox" id="feature22" name="bingo-field-22" />
+          <div>
+            <span> {{b22}} </span>
+          </div>
+        </article>
+
+        <article class="feature23">
+          <input type="checkbox" id="feature23" name="bingo-field-23" />
+          <div>
+            <span> {{b23}} </span>
+          </div>
+        </article>
+
+        <article class="feature24">
+          <input type="checkbox" id="feature24" name="bingo-field-24" />
+          <div>
+            <span> {{b24}} </span>
+          </div>
+        </article>
+
+        <article class="feature25">
+          <input type="checkbox" id="feature25" name="bingo-field-25" />
+          <div>
+            <span> {{b25}} </span>
+          </div>
+        </article>
+
+        <div>
+          <input class="bingobutton" type="submit" value="Bingo!" />
+        </div>
+      </form>
+    </section>
   </body>
 </html>
