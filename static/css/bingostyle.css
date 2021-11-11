@@ -1,0 +1,301 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+.frame {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #ca7c4e;
+  background: -webkit-linear-gradient(bottom left, #eebe6c 0%, #ca7c4e 100%);
+  background: -moz-linear-gradient(bottom left, #eebe6c 0%, #ca7c4e 100%);
+  background: -o-linear-gradient(bottom left, #eebe6c 0%, #ca7c4e 100%);
+  background: linear-gradient(to top right, #eebe6c 0%, #ca7c4e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEBE6C', endColorstr='#CA7C4E',GradientType=1);
+  color: #786450;
+  font-family: "kaneda-gothic", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.center {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  height: 299px;
+  width: 320px;
+  background: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+.profile {
+  float: left;
+  width: 200px;
+  height: 320px;
+  text-align: center;
+}
+.profile .image {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: 38px auto 0 auto;
+}
+.profile .image .circle-1,
+.profile .image .circle-2 {
+  position: absolute;
+  box-sizing: border-box;
+  width: 76px;
+  height: 76px;
+  top: -3px;
+  left: -3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #786450 #786450 #786450 transparent;
+  border-radius: 50%;
+  transition: all 1.5s ease-in-out;
+}
+.profile .image .circle-2 {
+  width: 82px;
+  height: 82px;
+  top: -6px;
+  left: -6px;
+  border-color: #786450 transparent #786450 #786450;
+}
+.profile .image img {
+  display: block;
+  border-radius: 50%;
+  background: #f5e8df;
+}
+.profile .image:hover {
+  cursor: pointer;
+}
+.profile .image:hover .circle-1,
+.profile .image:hover .image .circle-2,
+.profile .image .image:hover .circle-2 {
+  transform: rotate(360deg);
+}
+.profile .image:hover .circle-2 {
+  transform: rotate(-360deg);
+}
+.profile .name {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.profile .job {
+  font-size: 11px;
+  line-height: 15px;
+}
+.profile .actions {
+  margin-top: 33px;
+}
+.profile .actions .btn {
+  display: block;
+  width: 120px;
+  height: 30px;
+  margin: 0 auto 10px auto;
+  background: none;
+  border: 1px solid #786450;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  color: #786450;
+}
+.profile .actions .btn:hover {
+  background: #786450;
+  color: #fff;
+}
+.stats {
+  float: left;
+}
+.stats .box {
+  box-sizing: border-box;
+  width: 120px;
+  height: 99px;
+  background: #f5e8df;
+  text-align: center;
+  padding-top: 28px;
+  transition: all 0.4s ease-in-out;
+}
+.stats .box:hover {
+  background: #e1cfc2;
+  cursor: pointer;
+}
+.stats .box:nth-child(2) {
+  margin: 1px 0;
+}
+.stats span {
+  display: block;
+}
+.stats .value {
+  font-size: 18px;
+  font-weight: 600;
+}
+.stats .parameter {
+  font-size: 11px;
+}
+
+/* bingo format csssssssssssssssssssssssssssssssssssssssssssssssssssssssss*/
+body {
+  text-align: center;
+  color: #f5f5f5;
+  background-image: url("https://www.teamliquid.com/lcs/images/wallpaper/TL_3DLogo_DarkHorse_Logo_Desktop.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  background-size: cover;
+  height: 150%;
+  font-family: "kaneda-gothic", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10%;
+}
+
+.app {
+  position: absolute;
+  top: 80%;
+  left: 23%;
+  width: 800px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+
+  margin: auto;
+}
+
+.app i {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+
+article {
+  position: relative;
+  width: 140px;
+  height: 100px;
+  margin: 5px;
+  float: left;
+  border: 2px solid #50bcf2;
+  box-sizing: border-box;
+}
+
+article div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  transition: 0.5s ease;
+}
+
+article input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 100px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked ~ div {
+  background-color: #50bcf2;
+}
+
+.blue-color {
+  color: #50bcf2;
+}
+
+.gray-color {
+  color: #555;
+}
+
+.social i:before {
+  width: 14px;
+  height: 14px;
+  position: fixed;
+  color: #fff;
+  background: #0077b5;
+  padding: 10px;
+  border-radius: 50%;
+  top: 5px;
+  right: 5px;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin: 0%;
+    width: 100%;
+  }
+}
+
+/* bingo button */
+.bingobutton {
+  background-color: #3dd1e7;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: "kaneda-gothic", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  position: relative;
+  position: absolute;
+  left: 15%;
+  margin-top: 100px;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.bingobutton:focus {
+  outline: 0;
+}
+
+.bingobutton:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.bingobutton:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .bingobutton {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
