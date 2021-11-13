@@ -1,3 +1,4 @@
+from typing import Text
 from flask import Flask, render_template, url_for, request, session
 from werkzeug.utils import redirect
 
@@ -61,9 +62,6 @@ def register():
 @app.route('/bingo', methods=["POST","GET"])
 def bingo():
     if request.method == "POST":
-        print("owo")
-        
-        # rows, cols = (5, 5)
         userInput = [ [ None for i in range(5) ] for j in range(5) ]
         
         for row in range(0,5):
@@ -73,12 +71,17 @@ def bingo():
                     userInput[row][col]="X"
                 else:
                     userInput[row][col]="O"
+        
+        responseB = Methods.checkBingo(userInput, session["email"])
+    else:
+        responseB = ""
 
-        print(userInput)
+    print("!"+responseB)  
 
     if "username" in session:
-        bingo = Methods.getUserBingo(session["email"])
-        return render_template("bingo.html", user = session["username"], email = session["email"], bingos = Methods.getBingoPts(session["email"]),
+        em = session["email"]
+        bingo = Methods.getUserBingo(em)
+        return render_template("bingo.html", user = session["username"], email = em, Lpts = f"{Methods.getLPts(em):,}", bingos = Methods.getBingoPts(em),response=responseB,
         b1 = bingo[0],
         b2 = bingo[1],
         b3 = bingo[2],
@@ -91,7 +94,6 @@ def bingo():
         b10 = bingo[9],
         b11 = bingo[10],
         b12 = bingo[11],
-        b13 = bingo[12],
         b14 = bingo[13],
         b15 = bingo[14],
         b16 = bingo[15],
@@ -103,18 +105,30 @@ def bingo():
         b22 = bingo[21],
         b23 = bingo[22],
         b24 = bingo[23],
-        b25 = bingo[24],)
+        b25 = bingo[24])
     else:
         return redirect(url_for(""))
 
-@app.route('/admin')
+@app.route('/admin', methods=["POST","GET"])
 def admin():
+    if request.method == "POST":
+        num = 1
+        for x in range (1,50):
+            try:
+                tag = "adminbutton"+str(num)
+                text = (str(request.form[tag]))
+                key = text.split(": ")[0]
+                value = text.split(": ")[1]
+                Methods.updateMaster(key,value)
+                break
+            except:
+                num = num+1
     if "username" in session and session["username"] == "admin":
         Methods.writeMasterJSON()
         master = [1,2]
         return render_template("admin.html")
     else:
-        return redirect(url_for(""))
+        return redirect(url_for("home"))
 
 
 app.debug = True
