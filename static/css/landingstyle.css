@@ -1,0 +1,289 @@
+@import url("https://p.typekit.net/p.css?s=1&k=cmc1mzw&ht=tk&f=42250.42254&a=85225475&app=typekit&e=css");
+
+@font-face {
+  font-family: "kaneda-gothic";
+  src: url("https://use.typekit.net/af/fa3c45/00000000000000007735b5e0/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/fa3c45/00000000000000007735b5e0/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/fa3c45/00000000000000007735b5e0/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "kaneda-gothic";
+  src: url("https://use.typekit.net/af/a1fd38/00000000000000007735b5f0/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/a1fd38/00000000000000007735b5f0/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/a1fd38/00000000000000007735b5f0/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.tk-kaneda-gothic {
+  font-family: "kaneda-gothic", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+#container {
+  text-align: center;
+  font-weight: 800;
+}
+
+#text {
+  display: inline-block;
+  vertical-align: middle;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  font-family: "kaneda-gothic", sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  margin-left: 120px;
+  text-align: center;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: orange;
+  }
+}
+/* menu button styling */
+.menu-btn {
+  color: #c4ba40;
+  font-size: 23px;
+  font-weight: 400;
+  cursor: pointer;
+  display: none;
+}
+/* Home section styling */
+
+.home {
+  display: flex;
+  background: url(https://img1.goodfon.com/wallpaper/nbig/0/9a/tl-team-liquid-dota2-krass-6745.jpg)
+    no-repeat center;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+  font-family: "kaneda-gothic", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.extension {
+  display: flex;
+  background: url(https://img1.goodfon.com/wallpaper/nbig/0/9a/tl-team-liquid-dota2-krass-6745.jpg)
+    no-repeat center;
+  height: 50vh;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+  font-family: "kaneda-gothic", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+
+.home .home-content .description {
+  color: #ffffff;
+  font-size: 27px;
+}
+
+.home .home-content .title {
+  color: #ffffff;
+  font-size: 75px;
+  font-family: "kaneda-gothic", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  margin-left: 120px;
+  text-align: center;
+}
+
+:root {
+  --v-blue: #0c223e;
+  --v-white: #ece8e1;
+  --v-black: #0f1923;
+  --v-outline: rgba(236, 232, 225, 0.5);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+#container2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.box {
+  width: 70%;
+}
+
+a {
+  font-family: "kaneda-gothic", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.9rem;
+  position: relative;
+  display: block;
+  width: 400px;
+  margin-bottom: 3rem;
+  padding: 0.7rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--v-white);
+  border: 0;
+  background-color: transparent;
+}
+
+a:hover {
+  color: var(--v-white);
+}
+
+a::before,
+a::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(50% - 0.4rem);
+  content: "";
+  border: 1px solid var(--v-outline);
+  background-color: transparent;
+}
+
+a::before {
+  top: 0;
+  border-bottom: 0;
+}
+
+a::after {
+  bottom: 0;
+  border-top: 0;
+}
+
+/* Hover Effect */
+
+.hover-effect {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -5%;
+  width: 110%;
+  height: 100%;
+  content: "";
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transform: translateX(-100%) skew(-10deg);
+  background-color: var(--v-blue);
+}
+
+a:hover .hover-effect {
+  transform: translateX(0) skew(-10deg);
+}
+
+/* LABEL  */
+
+.label {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.label:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+/* Label Text */
+
+.label-text {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 1.9rem 3rem;
+}
+
+/* Right Bottom Corner dot */
+
+.label-text:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  content: "";
+  transition: background-color 0.2s ease-in;
+  background-color: var(--v-black);
+}
+
+a:hover .label-text:after {
+  background-color: var(--v-white);
+}
+
+/* PRIMARY BUTTON */
+
+.primary {
+  color: var(--v-black);
+}
+
+.primary .label::before {
+  background-color: var(--v-white);
+}
+
+/* OUTLINE BUTTON */
+
+.outline {
+  color: var(--v-white);
+}
+
+.outline .label::before,
+.outline .label::after {
+  border: 1px solid var(--v-outline);
+}
+
+/* OUTLINE RED BUTTON */
+
+.outline + .red {
+  color: var(--v-blue);
+}
+
+.outline + .red:hover {
+  color: var(--v-white);
+}
+
+.outline + .red .label::before,
+.outline + .red .label::after {
+  border-color: var(--v-blue);
+}
