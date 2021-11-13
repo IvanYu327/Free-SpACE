@@ -4,13 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/adminstyle.css" />
+    <link
+      rel="icon"
+      href="https://cdn.discordapp.com/emojis/771556839917355038.png?"
+    />
     <title>Admin</title>
   </head>
 
   <body onload="printBtn();">
-    <h1>Welcome Admin</h1>
+    <div>
+      <img
+        src="https://media.discordapp.net/attachments/907484583874936853/908839458802131035/LogoPng.png"
+        alt="logo"
+        class="logo"
+      />
+    </div>
+    <br />
+    <br />
+    <br />
+    <!-- <h1 class="admintitle">Welcome Liquid Admin</h1> -->
+    <div class="rectangle"></div>
+    <h1 class="header">Welcome Liquid Admin</h1>
+    <a href="{{url_for('home')}}" class="header2">Log Out </a>
+    <br />
+    <br />
+    <br />
     <div></div>
+    <form id="form" action="#" method="post"></form>
   </body>
 
   <script src="/static/js/script.js"></script>

@@ -4,43 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/cmc1mzw.css" />
+    <link rel="stylesheet" href="/static/css/loginstyle.css" />
+    <link
+      rel="icon"
+      href="https://cdn.discordapp.com/emojis/771556839917355038.png?"
+    />
     <title>Login</title>
   </head>
-
-  <section class="searchSection">
-    <form action="#" method="post">
-      <div id="enterSignUp">Sign Up</div>
-      <input
-        id="email-input"
-        type="text"
-        placeholder="Email"
-        name="email-field"
-      />
-      <br />
-      <input
-        id="username-input"
-        type="text"
-        placeholder="Username"
-        name="username-field"
-      />
-      <br />
-      <input
-        id="password-input"
-        type="text"
-        placeholder="Password"
-        name="pw-field"
-      />
-
-      <div class="button">
-        <input type="submit" value="Sign Up" />
-      </div>
-    </form>
-  </section>
-
   <body>
-    <h1>{{signup_fail}}</h1>
-    <h1>Login</h1>
-    <a href="{{url_for('login')}}">Login Page</a><br />
-    <a href="{{url_for('home')}}">Home</a><br />
+    <div class="form animated bounceIn">
+      <h1>Register</h1>
+      <form action="#" method="post" m>
+        <input placeholder="Email" type="text" name="email-field" />
+        <input placeholder="Username" type="text" name="username-field" />
+        <input placeholder="Password" type="password" name="pw-field" />
+        <button class="animated infinite pulse" type="submit">Register</button>
+      </form>
+      <br />
+      <h2 class="error">{{signup_fail}}</h2>
+      <a href="{{url_for('login')}}">Login</a>
+      <a>&emsp;</a>
+      <a href="{{url_for('home')}}">Home</a><br />
+    </div>
   </body>
 </html>

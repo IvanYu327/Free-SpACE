@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/static/css/bingostyle.css" />
-    <title>Document</title>
+    <link
+      rel="icon"
+      href="https://cdn.discordapp.com/emojis/771556839917355038.png?"
+    />
+    <title>Free SpACE</title>
   </head>
   <body>
     <div class="frame">
@@ -22,17 +26,16 @@
           </div>
 
           <div class="name">{{user}}</div>
-          <div class="job">{{email}}</div>
+          <div class="email">{{email}}</div>
 
           <div class="actions">
-            <button class="btn">Home</button>
-            <button class="btn">Log Out</button>
+            <a href="{{url_for('home')}}" class="btn">Log Out</a><br />
           </div>
         </div>
 
         <div class="stats">
           <div class="box">
-            <span class="value">[ 999,999 ]</span>
+            <span class="value">[ {{Lpts}} ]</span>
             <span class="parameter">Liquid+ points</span>
           </div>
           <div class="box">
@@ -40,7 +43,7 @@
             <span class="parameter">Bingo Wins</span>
           </div>
           <div class="box">
-            <span class="value">[ 0 Days ]</span>
+            <span class="value">[ 18 Days ]</span>
             <span class="parameter">until next Event</span>
           </div>
         </div>
@@ -49,10 +52,14 @@
 
     <section class="app">
       <form action="#" method="post">
-        <h1>It's time to <span class="blue-color">Bingo!</span></h1>
-        <h3 class="gray-color">
-          Pay attention to [Event descript]! Play Bingo to win points idk
-          joasidfjiasdfa!
+        <h1>Play Free Sp<span class="yellow-color">ACE</span></h1>
+        <h1 style="color: red">{{response}}</h1>
+        <h3>
+          Pay attention to Valorant Champions 2021! Check off boxes as the
+          events happen during the event!
+        </h3>
+        <h3>
+          Get 5 in a row in any direction, hit BINGO, and win Liquid+ points!
         </h3>
         <article class="feature1">
           <input type="checkbox" id="feature1" name="bingo-field-1" />
@@ -141,7 +148,7 @@
         <article class="feature13">
           <input type="checkbox" id="feature13" name="bingo-field-13" />
           <div>
-            <span> {{b13}} </span>
+            <span> Free spACE </span>
           </div>
         </article>
 
