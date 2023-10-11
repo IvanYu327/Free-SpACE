@@ -1,4 +1,4 @@
-## [Full Devpost and Video Demo](https://devpost.com/software/free-space-8n9auy/edit)
+## (Full Devpost and Video Demo)[https://devpost.com/software/free-space-8n9auy/edit]
 ## Inspiration
 Do you ever watch Valorant and there were some new ways to engage with the event from home? Maybe gain some of those new Liquid+ points? Our team created Free SpACE, a Teal Liquid themed bingo game that adds a layer of excitement to the upcoming Valorant Champions tournament as well as future events that Team Liquid is a part of. Especially as we stare at the screen so much during the pandemic, our team wanted to create a way to engage with our favourite team (Team Liquid ofc) which was more than just sitting in front of a screen and watching an event.
 
